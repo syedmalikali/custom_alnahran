@@ -28,7 +28,10 @@ app_license = "mit"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
+doctype_js = {
+    # "Sales Invoice" : "custom_alnahran/utilis/js/sales_invoice.js",
+    "Stock Entry": "custom_alnahran/utilis/js/stock_entry.js"
+    }
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -122,13 +125,12 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	"Stock Entry": {
+		"validate": "custom_alnahran.custom_alnahran.utilis.py.stock_entry.validate",
+        "on_submit": "custom_alnahran.custom_alnahran.utilis.py.stock_entry.on_submit"
+	}
+}
 
 # Scheduled Tasks
 # ---------------

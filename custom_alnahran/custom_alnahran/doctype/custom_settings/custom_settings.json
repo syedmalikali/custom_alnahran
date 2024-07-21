@@ -1,0 +1,46 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-14 19:54:29.137837",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "journal_entry_section",
+  "table_zwon"
+ ],
+ "fields": [
+  {
+   "fieldname": "journal_entry_section",
+   "fieldtype": "Section Break",
+   "label": "Journal Entry"
+  },
+  {
+   "fieldname": "table_zwon",
+   "fieldtype": "Table",
+   "options": "Custom Settings JE Table"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-05-14 19:57:42.319691",
+ "modified_by": "Administrator",
+ "module": "Custom Alnahran",
+ "name": "Custom Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

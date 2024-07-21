@@ -1,0 +1,46 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-12 20:21:44.916768",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "denomination",
+  "count",
+  "total"
+ ],
+ "fields": [
+  {
+   "fieldname": "denomination",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Denomination",
+   "options": "50\n20\n10\n5"
+  },
+  {
+   "fieldname": "count",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Count"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-12 20:23:29.825091",
+ "modified_by": "Administrator",
+ "module": "Custom Alnahran",
+ "name": "Cash Denominations Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
